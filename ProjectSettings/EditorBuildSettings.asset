@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Placeholder game start.unity
+    guid: ee6285e006622ae448455d7bdaf37e47
+  - enabled: 1
+    path: Assets/Scenes/Falling clocks game.unity
+    guid: e56eb1ef25fc1db46be636580938e6a3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
