@@ -4,8 +4,9 @@ using System.Collections.Generic;
 public class FallingClockSpawner : MonoBehaviour
 {
     public GameObject fallingClock;
-    public int spawnRate = 1;
+    public float spawnRate = 1;
     public float maxXOffset = 8;
+    public float maxYOffset = 8;
     public int maxRandomNumOfClocks = 3;
     public float minDistanceBetweenClocks = 2;
     private float timer = 0;
@@ -44,8 +45,9 @@ public class FallingClockSpawner : MonoBehaviour
                 }
                 if(invalidDistance) { break; }
 
+                float yOffset = Random.Range(transform.position.y, transform.position.y + maxYOffset);
 
-                Instantiate(fallingClock, new Vector3(xOffset, transform.position.y, 0), transform.rotation);
+                Instantiate(fallingClock, new Vector3(xOffset, yOffset, 0), transform.rotation);
                 xOffsets.Add(xOffset);
                 timer = 0;
             }
